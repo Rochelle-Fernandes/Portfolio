@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rochelle Fernandes</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="logo.jpg" alt="Logo">
+        </div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="hamburger" onclick="toggleMenu()">☰</div>
+    </nav>
+
+    <section id="about" class="about">
+        <img src="profile.jpg" alt="Profile Picture">
+        <p>Hello! ....
+            I am a second Year Computer Engineering Student at Fr. Conceicao Rodrigues College of Engineering. I am immensely passionate about exploring and building tech that people need and use....</p>
+    </section>
+<hr>
+    <section id="projects" class="projects">
+        <div class="project-card">
+            <img src="webdev.jpg">
+            <hr>
+            <h3>Finance Management Website</h3>
+            <br>
+            <p>Built a website to for users to plan and manage finance efficiently</p>
+            <br>
+            <a href="#">View Project</a>
+        </div>
+        <div class="project-card">
+            <img src="ds.jpg">
+            <hr>
+            <h3>Stock Analyst</h3>
+            <br>
+            <p>Built a tool for analysing stocks with various parameters using data science.</p>
+            <br>
+            <a href="#">View Project</a>
+        </div>
+        <div class="project-card">
+            <img src="aiml.jpg">
+            <hr>
+            <h3>AI Chatbot</h3>
+            <br>
+            <p>Trained an AI chatbot using various AI and ML algorithms.</p>
+            <br>
+            <a href="#">View Project</a>
+        </div>
+    </section>
+<hr>
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2025 My Portfolio | Follow me on <i class="fa-brands fa-github-alt"></i>
+            <i class="fa-brands fa-linkedin-in"></i>
+            <i class="fa-brands fa-instagram"></i>
+        </p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            document.querySelector('.nav-links').classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
